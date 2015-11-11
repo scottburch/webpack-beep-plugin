@@ -1,5 +1,5 @@
 {
-  "name": "webpack-beep",
+  "name": "webpack-beep-plugin",
   "version": "0.0.1",
   "description": "Add --beep option to cause a terminal bell on compile",
   "main": "webpack-beep-plugin.js",
