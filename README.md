@@ -10,3 +10,5 @@ npm install webpack-beep-plugin
 ```
 
 Then just run webpack with a --beep argument.
+
+NOTE: for webpack v2 use --env.beep.  Webpack v2 does not allow custom arguments without the 'env.' prefix

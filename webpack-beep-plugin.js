@@ -1,7 +1,7 @@
 var enable;
 
 function CompileBeepPlugin(options) {
-    enable = process.argv.indexOf('--beep') !== -1;
+    enable = process.argv.indexOf('--env.beep') !== -1 || process.argv.indexOf('--beep') !== -1;
 }
 
 CompileBeepPlugin.prototype.apply = function(compiler) {
