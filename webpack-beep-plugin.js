@@ -5,7 +5,7 @@ function CompileBeepPlugin(options) {
 }
 
 CompileBeepPlugin.prototype.apply = function(compiler) {
-    compiler.plugin('done', function() {
+    compiler.hooks.done.tap('CompileBeepPlugin', () => {
         enable && alertTerminal();
     });
 };
