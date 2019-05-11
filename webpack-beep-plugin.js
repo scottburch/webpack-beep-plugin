@@ -5,9 +5,14 @@ function CompileBeepPlugin(options) {
 }
 
 CompileBeepPlugin.prototype.apply = function(compiler) {
-    compiler.plugin('done', function() {
+    const onCompileDone = () => {
         enable && alertTerminal();
-    });
+    };
+    if (compiler.hooks) {
+        compiler.hooks.done.tap('CompileBeepPlugin', onCompileDone);
+    } else {
+        compiler.plugin('done', onCompileDone);
+    }
 };
 
 function alertTerminal(){
