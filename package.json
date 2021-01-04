@@ -19,7 +19,10 @@
     "url": "https://github.com/scottburch/webpack-beep-plugin/issues"
   },
   "homepage": "https://github.com/scottburch/webpack-beep-plugin#readme",
-  "dependencies": {
-    "webpack": "^1.12.4"
+  "peerDependencies": {
+    "webpack": "^4.0.0 || ^5.0.0"
+  },
+  "devDependencies": {
+    "webpack": "5.11.1"
   }
 }
